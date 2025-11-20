@@ -99,11 +99,11 @@ I enjoy designing end-to-end data workflows, exploring data visually, and writin
 ## 📈 GitHub Stats & Activity
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=<YOUR_GITHUB_USERNAME>&show_icons=true&theme=dark&count_private=true&hide_border=true" alt="github stats" />
+  <img src="https://github-readme-stats.vercel.app/api?username=<amaan-usmani>&show_icons=true&theme=dark&count_private=true&hide_border=true" alt="github stats" />
 </p>
 
 <p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=<YOUR_GITHUB_USERNAME>&theme=dark" alt="streak" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=<Yamaan-usmani>&theme=dark" alt="streak" />
 </p>
 
 ---
