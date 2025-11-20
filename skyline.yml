@@ -1,0 +1,24 @@
+name: Generate GitHub Skyline
+
+on:
+  schedule:
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+
+jobs:
+  skyline:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Generate 3D GitHub Skyline
+        run: |
+          npm install -g github-skyline-cli
+          github-skyline-cli amaan-usmani --format gif --out ./skyline/skyline.gif
+
+      - name: Commit and push
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: "Update GitHub skyline"
+          file_pattern: skyline/skyline.gif
