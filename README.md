@@ -3,6 +3,9 @@
   Replace <YOUR_GITHUB_USERNAME> below with your GitHub username
 -->
 
+
+
+
 <h1 align="center" style="margin-bottom:0">Amaan Usmani</h1>
 <p align="center" style="margin-top:4px">
   <strong>Data Engineer 🚀 | Turning raw data into real insights</strong>
@@ -18,10 +21,10 @@
 <!-- Social / quick badges -->
 <p align="center">
   <!-- Replace YOUR_GITHUB_USERNAME with your username -->
-  <a href="https://github.com/<YOUR_GITHUB_USERNAME>">
-    <img alt="Profile views" src="https://komarev.com/ghpvc/?username=<YOUR_GITHUB_USERNAME>&style=flat-square&color=2bbc8a"/>
+  <a href="https://github.com/<amaan-usmani>">
+    <img alt="Profile views" src="https://komarev.com/ghpvc/?username=<amaan-usmani>&style=flat-square&color=2bbc8a"/>
   </a>
-  <a href="https://github.com/<YOUR_GITHUB_USERNAME>">
+  <a href="https://github.com/<amaan-usmani>">
     <img alt="Top Langs" src="https://github-readme-stats.vercel.app/api/top-langs/?username=<YOUR_GITHUB_USERNAME>&layout=compact&theme=radical&hide_border=true"/>
   </a>
 </p>
@@ -124,7 +127,116 @@ I enjoy designing end-to-end data workflows, exploring data visually, and writin
 1. Replace **`<YOUR_GITHUB_USERNAME>`** with your GitHub username everywhere in this file.
 2. Replace the repo/demo links with your real repo URLs and live demo URLs.
 3. Update LinkedIn / Email / Portfolio links.
-4. Optionally swap shields, themes or GIFs to match your aesthetic.
+4. Optionally swap shields, themes or GIFs to match your aesthetic
+
+![Snake animation](https://raw.githubusercontent.com/amaaanusmani/amaaanusmani/output/github-contribution-grid-snake-dark.svg)
+
+
+
+name: Generate Snake Animation
+
+on:
+  schedule: 
+    - cron: "0 */12 * * *"
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Generate Snake
+        uses: Platane/snk@v3
+        with:
+          github_user_name: amaaanusmani
+          outputs: |
+            dist/github-contribution-grid-snake-dark.svg
+
+      - name: Push output
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: "Generated snake animation"
+          file_pattern: "dist/*"
+![GitHub Skyline](./skyline/skyline.gif)
+
+
+name: Generate GitHub Skyline
+
+on:
+  schedule:
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+
+jobs:
+  skyline:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Generate 3D GitHub Skyline
+        run: |
+          npm install -g github-skyline-cli
+          github-skyline-cli amaaanusmani --format gif --out ./skyline/skyline.gif
+
+      - name: Commit and push
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: "Update GitHub skyline"
+          file_pattern: skyline/skyline.gif
+
+         ![Metrics](./metrics.svg)
+
+         name: Generate Metrics
+
+on:
+  schedule:
+    - cron: "0 */6 * * *"
+  workflow_dispatch:
+
+jobs:
+  metrics:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          user: amaaanusmani
+          template: classic
+          base: header, activity, community, repositories
+          config_animations: true
+          config_timezone: Asia/Kolkata
+          filename: metrics.svg
+
+      - uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: "Update metrics image"
+          file_pattern: metrics.svg
+
+          
+![Trophies](https://github-profile-trophy.vercel.app/?username=amaaanusmani&theme=juicyfresh&no-bg=true&no-frame=true&column=8)
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:2b5876,100:4e4376&height=250&section=header&text=Amaan%20Usmani&fontSize=60&fontColor=ffffff"/>
+
+![Python](https://img.shields.io/badge/Python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+![AWS](https://img.shields.io/badge/AWS-FF9900?style=for-the-badge&logo=amazonwebservices&logoColor=white)
+
+
+<p align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?size=30&duration=3000&color=34F6F1&center=true&vCenter=true&repeat=true&width=700&height=70&lines=Data+Engineer;Data+Analyst;ML+Learner;Turning+Raw+Data+Into+Insights">
+</p>
+
+
+![Amaan's Graph](https://github-readme-activity-graph.vercel.app/graph?username=amaaanusmani&theme=react-dark&hide_border=true)
+
+
+
+
 
 ---
 
